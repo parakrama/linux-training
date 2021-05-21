@@ -1,17 +1,13 @@
-dn: ou=staff,dc=example,dc=com
+dn: ou=sales,dc=example,dc=com
 objectclass: organizationalunit
-ou: staff
-description: Company Staff
+ou: sales
+description: Sales Team
 
-dn: ou=contractors,ou=staff,dc=example,dc=com
+dn: ou=finance,dc=example,dc=com
 objectclass: organizationalunit
-ou: contractors
-description: Company contractors
+ou: finance
+description: Finance Team
 
-dn: ou=permanent,ou=staff,dc=example,dc=com
-objectclass: organizationalunit
-ou: permanent
-description: Company permanent employees
 
 
 
