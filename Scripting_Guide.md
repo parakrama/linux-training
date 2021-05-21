@@ -439,15 +439,20 @@ echo "B % A : $val”
 2. Write a shell script to print  the Names line by line   from  UserStat.txt file,   and print the word  WSO2-USER  if the username is equal to Tom. Output should be as below format  (Answer can be found in exercise_no2.sh)
 	
 Sam
+
 Jeff
+
 WSO2-USER
+
 Simon
 
 
 3. Read the given UserSalary.txt file and print Salary values larger than 2500 . Output should be as below (Answer can be found in exercise_no3.sh)
 
 7000
+
 4000
+
 4000
 
 
