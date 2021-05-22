@@ -3,7 +3,7 @@
 
 ## Printing  
 
-#### To  print a line in in shell we can use the command  “echo”  
+#### To  print  we can use the command  ``` echo```  
 
 Eg:1 
 
@@ -15,7 +15,7 @@ echo “Printing Third Line”
 ```
 
 
-#### To read from input from command line input user can use the command called  “read” 
+#### To read the input from command line input  , user can use the ``` read ```  command
 
 Eg:2
 
@@ -29,7 +29,7 @@ echo  “Command line input is : $input”
 ## String Manipulation 
 
 
-#### Print a File in shell script 
+#### Print a file in shell script 
 
 Eg:3
 
@@ -38,7 +38,7 @@ Eg:3
 cat FileName.txt
 ``` 
 
-#### Finding the matching line in text  with command “grep” , below command will print the all lines in the file that has the word “Ubuntu”
+#### Finding the matching line in text  with  ```grep ``` , below command will print the all lines in the file that has the word ```Ubuntu```
 
 
 Eg:4
@@ -48,7 +48,7 @@ Eg:4
 cat FileName.txt | grep “Ubuntu” 
 ```
 
-#### Can Use the option “-i”  with grep command  to ignore the case sensitivity. So the below script will print the  lines with  word Ubuntu ,UBUNTU and any case varinet of word ubuntu 
+#### Can Use the option ```-i```  with ```grep``` command  to ignore the case sensitivity. So the below script will print the  lines with  word Ubuntu ,UBUNTU and any case varinet of word ubuntu 
 
 Eg:5 
 
@@ -58,7 +58,7 @@ Cat FileName.txt | grep -i “Ubuntu”
 ```
 
 
-#### Grep command can be used with option “-v”  to  display the non-matching lines. Below command will print the all lines in the file which does not have the word “GPL” 
+#### ```grep``` command can be used with option ```-v```  to  display the non-matching lines. Below command will print the all lines in the file which does not have the word ```GPL``` 
 
 Eg:6 
 ```shell 
@@ -68,7 +68,7 @@ Cat FileName.txt | grep -v  “GPL”
 
 ## Input Output Operations 
 
-#### Redirect output to a file  , “>” command will print the output to a file (The '>' symbol is used for output (STDOUT) redirection.)
+#### Redirect output to a file  , ```>``` symbol will redirect  the output to a file (The ```>``` symbol is used for output (STDOUT) redirection.)
 
 
 Eg:7 
@@ -77,7 +77,7 @@ Eg:7
 cat FileName.txt | grep Ubuntu > Output.txt
 ```
 
-#### Command output of  ls -ltr wil print to a Directory_list.txt file 
+#### Command output of  ```ls -ltr``` will redrect  to  ```Directory_list.txt``` file 
 
 Eg:8
 ```shell
@@ -85,8 +85,8 @@ Eg:8
 ls -ltr  > Directory_list.txt 
 ``` 
 
-#### Provide input to a command.  The '<' symbol is used for input(STDIN) redirection ,So beneath command “wc -l “ take input as file content of  FileName.txt 
-( wc -l  command count the number of lines in a given file)  
+#### The '<' symbol is used for input(STDIN) redirection ,So beneath command ```wc -l```  take input as file content of  ```FileName.txt``` 
+```( wc -l  command count the number of lines in a given file)```  
 
 
 
