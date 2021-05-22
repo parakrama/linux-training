@@ -96,7 +96,8 @@ Eg:9
 wc -l < FileName.txt
 ```
 
-#### To Append content to a file , in shell scripting we can use the symbol of  >>
+#### To Append content to a file , we can use the symbol of  ```>>``` . For example  below  commands will append  ```print first sentence``` and  ```print second  sentence``` sentence to end of the Output.txt file 
+
 
 
 Eg:10
@@ -106,13 +107,12 @@ Echo  “print first sentence” >> Output.txt
 Echo  “print second sentence” >> Output.txt
 ```
 
-#### Above commands will append  “print first sentence” and  “print second  sentence” sentence to end of the Output.txt file 
 
 
 ## PIPE 
 
 
-#### Symbol  “ | “  use to pass output from  one command to another as input 
+#### Symbol  ``` |``` is  using  to pass output of a command to another command as a input 
 
 Eg: 11 
 ```shell
@@ -120,13 +120,14 @@ Eg: 11
 cat FileName.txt | grep -v  “GPL” 
 ```
 
-#### cat FileName.txt  print the contents of the file.  In the above by using PIPE “|” symbol  its output is pass to the command grep -v  “GPL”   for further processing 
+#### ```cat FileName.txt``` will  print the contents of the file.  In the above by using PIPE ```|``` symbol  its output is pass to the command ```grep -v  “GPL”```   for further processing 
 
 
 
 ## IF ELSE Statements 
 
 #### If a condition is true, the algorithm performs a certain action; else, it performs something else.
+
 ```shell 
 if [ condition ]
 then
@@ -182,7 +183,7 @@ NUMBER1 -le NUMBER2 True if NUMBER1 is equal or less than NUMBER2
 
 ## IF ELIF statements 
 
-#### Format of  if elif statements ( Nested if else operations ) 
+#### Format of  ```if```  ```elif``` statements ( Nested if else operations ) 
 
 ```shell 
 If [ conditional expression1 ]
@@ -205,7 +206,7 @@ fi
 
 Eg:14
 
-#### Refer the below example of how to use if elif conditions in real world example 
+#### Refer to  the below example which outline how to  use ```if elif``` conditions .
 
 ```shell
 #!/bin/bash
@@ -226,7 +227,7 @@ fi
 
 ## Loops 
 
-In this section of our Bash Scripting Tutorial we'll look at the two  different loop formats available to us as well as discuss  how to use them in scripting via examples 
+In this section of our Bash scripting Tutorial , we'll look at the two  different loop formats available to us as well as discuss  how to use them in scripting via examples 
 
 ### For Loops
 
@@ -292,10 +293,10 @@ do
 Done
 ```
 
-One of major advantages of while loop is that , it can be easily used to read the contents of a FILE by  line by line  and those line can be forward for further processing
+One of major advantages of while loop is that , it can be easily used to read the contents of a FILE by  line by line  and those lines can be forward for further processing
 
 
-#### Script  read the continents.txt file line by line and print it 
+#### Script  read the ```continents.txt``` file line by line and print it 
 
 Eg:19
 ```shell
@@ -308,7 +309,7 @@ do
 done < continents.txt
 ```
 
-#### Below example will read the continents.txt file line by line and print each line , Additionally print “Not a continent”  statement  when line matches the word Colombo
+#### Below example will read the ```continents.txt``` file line by line and print each line , Additionally it will print ```Not a continent```  statement  when line matches the word ```Colombo```
 
 
 Eg:20
@@ -328,9 +329,9 @@ done < continents.txt
 ```
 
 
-## Retrieving Columns via  AWK command 
+## Retrieving Columns via  ```AWK``` command 
 
-By default,   awk  command filter the columns by using space as separator 
+By default,   ```awk```  command filter the columns by using space as separator 
 
 #### UserStat.txt File 
 ```shell 
@@ -343,7 +344,7 @@ Tom   10.10.1.1    https://google.com/gsuite
 Simon  172.1.2.1    https://wso2.com/jobs
 ```
 
-#### Below stript will print the first column of UserStat.txt file
+#### Below stript will print the first column of ```UserStat.txt``` file
 
 Eg:21
 
@@ -363,12 +364,12 @@ cat UserStat.txt | awk '{ print $1 "  " $3 }'
 ```
 
 
-Additionally  awk command can be used to filter columns by using  custom symbols , When  user need to  specify the comma as  field separator,  use option  ``` -F ‘, ‘ ```
+Additionally  ```awk``` command can be used to filter columns by using  custom symbols ,For instace  when  user need to  specify the comma as  field separator, he can use  option as  ``` -F ‘, ‘ ```
 
 
 #### UserSalary.csv File
 
-From Left to right column are  Email, employeeID, FirstName, LastName, Salary 
+From left to right column are  Email, employeeID, FirstName, LastName, Salary 
 ```shell
 rachel@yourcompany.com,9012,Rachel,Booker,7000
 
@@ -381,7 +382,7 @@ mary@yourcompany.com,9346,Mary,Jenkins,2000
 jamie@yourcompany.com,5079,Jamie,Smith,2500
 ```
 
-#### Below command will print  the second column of the file , Please note that COMMA is  used as  field / column separator  
+#### Below commands will print  the second column of the file , Please note that ```COMMA```  is  used as  field / column separator  
 
 Eg:23
 ```shell 
@@ -389,7 +390,7 @@ Eg:23
 cat EmailStat.csv | awk -F ',' '{ print $2 }'  
 ```
 
-#### Script will take the  first  and third column and redirect the output to file 
+#### Script will take the  first  and third columns  and redirect it to the  output to file 
 ```shell 
 Eg:24 
 #!/bin/bash
@@ -398,7 +399,7 @@ cat EmailStat.csv | awk -F ',' '{ print $1" "$3 }'  > output.txt
 
 ## Mathematical Operations 
 
-You have to use space with each operand when you want to use ```expr``` command to do any mathematical operations. Create a bash file and add the various ```expr``` commands to check how the ```expr``` command works.
+
 
 #### Below script will run the basic mathematics operations and give the relevant outputs 
 
