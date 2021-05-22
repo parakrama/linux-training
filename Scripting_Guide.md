@@ -161,7 +161,7 @@ Eg:13
 A=5
 B=50
 
-if [ $A -le $B ]
+if [ $A -gt $B ]
 then
    echo "A is less than B"
 else
