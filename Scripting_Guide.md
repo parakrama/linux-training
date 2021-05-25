@@ -145,7 +145,7 @@ Eg:12
 A=5
 B=50
 
-if [ $A == $B ]
+if [ $A == $B ]   #Be Mindful about the spaces in between the if , [ , $A , == , $B , ]  characters, which  is a must. Otherwise script will throw a syntax error 
 then
    echo "A is equal to B"
 else
