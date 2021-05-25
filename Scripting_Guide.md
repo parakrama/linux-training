@@ -410,7 +410,7 @@ Eg:25
 A=70
 B=90
 
-val=`expr $A + $B`
+val=`expr $A + $B` #Be Mindful about the spaces in between the "expr" , $A , + , $B  characters, which  is a must. Otherwise script will throw a syntax error 
 echo "A + B : $val"
 
 val=`expr $A - $B`
